@@ -84,4 +84,5 @@ public class Proccess implements Serializable {
     @OneToMany(mappedBy = "proccess")
     private List<Provider> providerList = new ArrayList<>();
 
+
 }

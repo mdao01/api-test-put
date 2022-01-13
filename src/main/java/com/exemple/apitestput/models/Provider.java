@@ -17,7 +17,7 @@ public class Provider implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String id;
+    private Long id;
 
     @ManyToOne
     @JoinColumn(name = "proccess_id")

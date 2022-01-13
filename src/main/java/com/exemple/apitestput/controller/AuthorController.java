@@ -29,6 +29,6 @@ public class AuthorController {
     @ResponseStatus(HttpStatus.CREATED)
     public Author postAuthor(@RequestBody Author author){
 
-        return authorService.newAuthor(author);
+        return authorService.saveOne(author);
     }
 }

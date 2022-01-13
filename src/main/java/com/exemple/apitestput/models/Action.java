@@ -15,7 +15,7 @@ public class Action implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Type id;
+    private String id;
 
     @ManyToOne
     @JoinColumn(name = "proccess_id")

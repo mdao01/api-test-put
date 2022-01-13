@@ -20,12 +20,12 @@ public class Defendant implements Serializable {
     @EqualsAndHashCode.Include
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String id;
+    private Long id;
     private String name;
     private String maritalStatus;
 
-    @OneToMany(mappedBy = "defendant")
-    private List<Document> documentList = new ArrayList<>();
+  //  @OneToMany(mappedBy = "defendant")
+  //  private List<Document> documentList = new ArrayList<>();
 
     @ManyToOne
     @JoinColumn(name = "proccess_id")

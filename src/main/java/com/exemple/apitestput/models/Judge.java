@@ -21,13 +21,13 @@ public class Judge implements Serializable {
     @EqualsAndHashCode.Include
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String id;
+    private Long id;
     private String name;
     private String county;
     private String documents;
 
-    @OneToMany(mappedBy = "judge")
-    private List<Document> documentList = new ArrayList<>();
+  //  @OneToMany(mappedBy = "judge")
+  //  private List<Document> documentList = new ArrayList<>();
 
     @ManyToOne
     @JoinColumn(name = "proccess_id")

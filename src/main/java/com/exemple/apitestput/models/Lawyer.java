@@ -17,7 +17,7 @@ public class Lawyer implements Serializable {
     @EqualsAndHashCode.Include
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String id;
+    private Long id;
     private String name;
     private String code;
 

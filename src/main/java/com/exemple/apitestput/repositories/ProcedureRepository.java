@@ -1,9 +1,9 @@
 package com.exemple.apitestput.repositories;
 
 import com.exemple.apitestput.models.Lawyer;
-import com.exemple.apitestput.models.Proccess;
+import com.exemple.apitestput.models.Procedure;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface LawyerRepository extends JpaRepository<Lawyer, Long> {
+public interface ProcedureRepository extends JpaRepository<Procedure, Long> {
 
 }

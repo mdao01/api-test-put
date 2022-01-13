@@ -15,7 +15,7 @@ public class AuthorService {
     @Autowired
     private AuthorRepository authorRepository;
 
-    public Author updateAuthor(Author obj){
+    public Author saveOne(Author obj){
         return authorRepository.save(obj);
     }
 
@@ -27,9 +27,5 @@ public class AuthorService {
     public Optional<Author> findById(Long id){
         Optional<Author> author = authorRepository.findById(Long.valueOf(id));
         return author;
-    }
-
-    public Author newAuthor(@RequestBody Author obj){
-        return authorRepository.save(obj);
     }
 }
